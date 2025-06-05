@@ -26,16 +26,9 @@
             transition: margin-left 0.3s;
         }
 
-        /* When offcanvas is open, shift body content */
-        body.offcanvas-open {
-            margin-left: 240px;
-        }
+       
 
-        @media (max-width: 768px) {
-            body.offcanvas-open {
-                margin-left: 75%;
-            }
-        }
+       
 
         .offcanvas-start {
             width: 240px !important;
@@ -802,17 +795,7 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
 
-    <script>
-        // Add class to body when offcanvas is shown
-        document.getElementById('sidebarMenu').addEventListener('show.bs.offcanvas', function () {
-            document.body.classList.add('offcanvas-open');
-        });
-
-        // Remove class when offcanvas is hidden
-        document.getElementById('sidebarMenu').addEventListener('hide.bs.offcanvas', function () {
-            document.body.classList.remove('offcanvas-open');
-        });
-    </script>
+    
 
 </body>
 
